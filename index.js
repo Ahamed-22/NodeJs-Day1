@@ -5,8 +5,9 @@ const { createFile , readAllFils } = require('./utils/filesystem')
 
 httpServer.use(bodyParser.json())
 
-httpServer.listen(3000,"localhost",() => {
+httpServer.listen(3000,"0.0.0.0",() => {
   console.log("server start success");
+  console.log("website deployed success!");
 })
 
 const todos = [];
